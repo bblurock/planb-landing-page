@@ -1,6 +1,6 @@
 $(function(){
 	$(window)._scrollable(); // When scrolling the window
-	$('section').css('min-height', $(window).height());
+	$('div').css('min-height', $(window).height());
 
 	var $paneTarget = $('body');
 	$('#nav-land').click(function(){

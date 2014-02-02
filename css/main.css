@@ -97,30 +97,30 @@ body h6 {
   font-family: 'Oxygen', sans-serif;
 }
 .empty-div {
-  height: 65px;
+  height: 60px;
 }
 .navbar-default {
   background-color: #1ccdaa;
 }
 .navbar-default .navbar-nav > li > a {
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 .navbar-default .navbar-brand {
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   color: rgba(255, 255, 255, 0.9);
 }
 .navbar-default .navbar-brand img {
-  width: 65px;
+  width: 60px;
 }
 .navbar-brand,
 .navbar-nav li a {
   line-height: 65px;
-  height: 65px;
-  padding-top: 0;
+  height: 60px;
+  padding-top: 0px;
 }
-section#landing {
+div#landing {
   background: url('../img/BluredBackground.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -128,38 +128,38 @@ section#landing {
   background-size: cover;
   color: #f5f5f5;
 }
-section#landing h1,
-section#landing h2,
-section#landing h3,
-section#landing h4,
-section#landing h5 {
+div#landing h1,
+div#landing h2,
+div#landing h3,
+div#landing h4,
+div#landing h5 {
   font-family: 'Nunito', sans-serif;
   display: block;
   text-align: center;
 }
-section#landing h2 {
+div#landing h2 {
   font-family: 'Alegreya Sans SC', sans-serif;
 }
-section#landing h3,
-section#landing h4,
-section#landing h5,
-section#landing h6 {
+div#landing h3,
+div#landing h4,
+div#landing h5,
+div#landing h6 {
   font-family: 'Oxygen', sans-serif;
 }
-section#landing h1 {
+div#landing h1 {
   margin-top: 0px;
 }
-section#landing .slogan-and-download {
-  padding: 5% 0px;
+div#landing .slogan-and-download {
+  padding: 10% 0px;
 }
-section#landing .soda {
+div#landing .soda {
   margin: 0 auto;
   display: table;
 }
-section#landing .soda img {
+div#landing .soda img {
   width: 150px;
 }
-section#landing .download {
+div#landing .download {
   width: 300px;
   background-color: rgba(0, 0, 0, 0.3);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)));
@@ -177,74 +177,80 @@ section#landing .download {
   position: relative;
   bottom: -23px;
 }
-section#landing .download h3 {
+div#landing .download h3 {
   margin-top: 0px;
 }
-section#landing .download img {
+div#landing .download img {
   display: block;
   margin: 0 auto;
   width: 113px;
   height: 40px;
 }
-section#what-is-soda {
+div#what-is-soda {
   background-color: #ffffff;
   color: black;
 }
-section#what-is-soda .wrap {
+div#what-is-soda .wrap {
   padding: 5% 0;
 }
-section#what-is-soda h1 {
+div#what-is-soda h1 {
   font-family: 'Nunito', sans-serif;
 }
-section#what-is-soda h2 {
+div#what-is-soda h2 {
   font-family: 'Alegreya Sans SC', sans-serif;
 }
-section#what-is-soda h3,
-section#what-is-soda h4,
-section#what-is-soda h5,
-section#what-is-soda h6 {
+div#what-is-soda h3,
+div#what-is-soda h4,
+div#what-is-soda h5,
+div#what-is-soda h6 {
   padding-top: 2%;
+  font-size: 0.8rem;
   line-height: 1.8rem;
   font-family: 'Oxygen', sans-serif;
 }
-section#what-is-soda .iphone {
+div#what-is-soda .iphone {
   margin: 0 auto;
+  margin-top: 10%;
   display: table;
 }
-section#what-is-soda .text-wrap {
-  width: 80%;
+div#what-is-soda .text-wrap {
+  width: 65%;
   margin: 0 auto;
   display: table;
-  margin-top: 13%;
+  margin-top: 25%;
   float: right;
 }
-section#places {
+div#places {
   color: #ffffff;
   background-color: #4ac5a0;
   overflow-y: hidden;
 }
-section#places .wrap {
+div#places .wrap {
   padding: 5% 0;
 }
-section#places h1 {
+div#places h1 {
   font-family: 'Nunito', sans-serif;
   text-align: center;
 }
-section#places .everything {
+div#places .everything {
+  display: table;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5%;
   font-size: 2.5rem;
 }
-section#places img {
+div#places img {
   margin: 0 auto;
   display: table;
   position: absolute;
   left: 50%;
-  margin-top: 30px;
+  margin-top: 0%;
   margin-left: -180px;
 }
-section#take-me-there {
+div#take-me-there {
   color: #2f9375;
 }
-section#take-me-there .googlemap-wrap {
+div#take-me-there .googlemap-wrap {
   content: "";
   display: block;
   position: absolute;
@@ -255,27 +261,30 @@ section#take-me-there .googlemap-wrap {
   background-image: url('../img/googlemap.png');
   background-size: contain;
 }
-section#take-me-there .iphone {
+div#take-me-there .iphone {
   margin: 0 auto;
+  width: 35%;
+  margin-top: 5%;
+  margin-left: 30%;
   display: table;
 }
-section#take-me-there .wrap {
+div#take-me-there .wrap {
   padding: 5% 0;
 }
-section#take-me-there .text-wrap {
+div#take-me-there .text-wrap {
   display: table;
-  vertical-align: middle;
-  margin: 30% auto;
+  margin: 0 auto;
+  margin-top: 40%;
   width: 65%;
-  float: left;
+  float: middle;
 }
-section#contact-us {
+div#contact-us {
   text-align: center;
 }
-section#contact-us .wrap {
+div#contact-us .wrap {
   padding: 5% 0;
 }
-section#contact-us form {
+div#contact-us form {
   border-radius: 5px;
   border: 1px solid slategrey;
   width: 100%;
@@ -283,8 +292,8 @@ section#contact-us form {
   margin: 0 auto;
   display: block;
 }
-section#contact-us form input,
-section#contact-us form textarea {
+div#contact-us form input,
+div#contact-us form textarea {
   box-sizing: border-box;
   margin: 0;
   outline: 0;
@@ -310,17 +319,17 @@ section#contact-us form textarea {
   -webkit-transition: all .2s;
   transition: all .2s;
 }
-section#contact-us form input:focus,
-section#contact-us form textarea:focus {
+div#contact-us form input:focus,
+div#contact-us form textarea:focus {
   border-color: #ecf0f1;
   background-color: #FFF;
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
 }
-section#contact-us form textarea {
+div#contact-us form textarea {
   resize: none;
-  height: 300px;
+  height: 200px;
 }
 #we-are {
   min-height: 80px;
