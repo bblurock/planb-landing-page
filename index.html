@@ -6,28 +6,31 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Soda</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-
+<!-- 
 	    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	    <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
 	    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400' rel='stylesheet' type='text/css'>
 	    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-	    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'> -->
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-        <!-- // <script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script> -->
-        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+
         <script type="text/javascript">
         	$(document).ready(function(){
-        		$.fn.fullpage();
+        		$.fn.fullpage(
+        			{
+        				anchors: ['GetSoda', 'WhatIsSoda', 'NearbyYou', 'Navigate', 'Us'],
+  						menu: '#menu'
+        			});
         	});
         </script>
     </head>
@@ -38,7 +41,7 @@
 
         <!-- Add your site or application content here -->
 
-        <nav id="planb-nav"class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav id="planb-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
 	        <div class="container">
 		        <div class="navbar-header">
 			        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -46,59 +49,63 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
 			        </button>
-			        <a class="navbar-brand" href="#"><img src="img/soda.png" alt="" />Soda</a>
+			        <a href="/">
+				        <img src="img/soda.png" alt="Soda" width="60px" height="60px" class="logo">
+				        <div class="navbar-brand">Soda</div>
+			    	</a>
 		        </div>
 
 		        <!-- Collect the nav links, forms, and other content for toggling -->
 		        <div class="collapse navbar-collapse" id="navbar-collapse">
-				    <ul class="nav navbar-nav navbar-right">
-				        <li><a id="nav-land" href="#landing">Get Soda</a></li>
-				        <li><a id="nav-what" href="#what-is-soda">What is Soda</a></li>
-				        <li><a id="nav-places" href="#places">Places Around you</a></li>
-				        <li><a id="nav-me-there" href="#take-me-there">Take Me There</a></li>
+				    <ul class="nav navbar-nav navbar-right" id="menu">
+				        <li data-menuanchor="Getsoda"><a href="#GetSoda">取得 Soda</a></li>
+				        <li data-menuanchor="WhatIsSoda"><a href="#WhatIsSoda">Soda 是什麼</a></li>
+				        <li data-menuanchor="NearbyYou"><a href="#NearbyYou">你的附近</a></li>
+				        <li data-menuanchor="Navigate"><a href="#Navigate">導航</a></li>
+				        <li data-menuanchor="Us"><a href="#Us">關於我們</a></li>
 			        </ul>
 		        </div>
 	        </div>
 		</nav>
+
 		<div class="empty-div"></div>
-		
+
 	        <div class="section" id="landing">
 		        <div class="container slogan-and-download">
 			        <div class="row soda">
 				        <img src="img/Soda-logo.png" alt="" />
 			        </div>
 			        <h1>Soda</h1>
-				    <h2>Your best travel guide in Taiwan</h2>
-				    <h4>Find your needs around you with just a click.</h4>
+				    <h2>最方便的在地助手</h2>
+				    <h4>一個按鈕，找到你最需要的</h4>
 			        <div class="download row">
-				        <h3>Get It Free!</h3>
+				        <h3>免費取得</h3>
 				        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					        <img src="img/app_store.png" alt="" />
+					        <img src="img/app_store.png" alt="" width="110px" />
 				        </div>
 				        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					        <img src="img/google_play.png" alt="" />
+					        <img src="img/google_play.png" alt="" width="100px"/>
 				        </div>
 			        </div>
 		        </div>
 			</div>
 
-	        <div class="section" id="what-is-soda">
-		        <div class="container wrap">
+	        <div class="section" id="whatissoda">
+		        <div class="container wrap">	
 			        <div class="row">
 				        <div class="col-lg-6 col-md-6 col-sm-6">
 					        <div class="text-wrap">
-					        <h1>Finding place is always annoying?</h1>
-					        <h2>We Know That!<br>You just need a little hint.
-					        </h2>
-					        <h4><p>Furthermore,<br>
-						        We give you the most complete list of<br>
-						        ATMs, parking lots, convenient stores info of all time!</p></h4>
+					        <h1>找地方 很麻煩?</h1>
+					        <h2>你只是需要一點幫助</h2>
+					        <h4><p>我們提供最完整的地點資料<br>讓你探索精彩不間斷</p></h4>
 					        </div>
 					    </div>
 				        <div class="col-lg-6 col-md-6 col-sm-6">
-					        <div class="iphone">
-					            <img src="img/iphone-cate.png" width="230" height="501" alt="" />
+					        <div class="iphone" >
+					            <img src="img/iphone-cate.png" alt="" />
 					        </div>
 				        </div>
 			        </div>
@@ -109,74 +116,62 @@
 		        <div class="container wrap">
 			        <div class="row">
 				        <div class="col-lg-12 col-md-12 col-sm-12">
-					        <h1><span class="everything">EVERYTHING</span> You Want To Know</h1>
+					        <h1><span class="everything">你想知道的</span> 所有訊息</h1>
 				        </div>
 			        </div>
 			        <div class="row">
 				        <div class="col-lg-12 col-md-12 col-sm-12">
 					        <div class="iphone">
-						        <img src="img/iphone-list.png" width="379" height="799" alt="" />
+						        <img src="img/iphone-list.png" alt="" />
 					        </div>
 				        </div>
 			        </div>
 		        </div>
 		    </div>
 
-        	<div class="section" id="take-me-there">
+        	<div class="section" id="takemethere">
 		        <div class="googlemap-wrap"></div>
 		        <div class="container wrap">
 			        <div class="row">
 				        <div class="col-lg-6 col-md-6 col-sm-6">
 					        <div class="iphone">
-						        <img src="img/Navigate-2Fone.png" width="379" height= "574" alt="" />
+						        <img src="img/Navigate-2Fone.png" alt="" />
 					        </div>
 				        </div>
 				        <div class="col-lg-6 col-md-6 col-sm-6">
 					        <div class="text-wrap">
-						        <h1>"Take Me There"</h1>
-						        <h3>We brings you there!</h3>
-						        <h3>With one simple click.</h3>
+						        <h1>導航</h1>
+						        <h3>一個按鈕</h3>
+						        <h3>讓Soda為你帶路</h3>
 					        </div>
 				        </div>
 			        </div>
 		        </div>
     		</div>
 
-        <!-- <div id="we-are">
-	        <div class="container wrap">
-		        <div class="row">
-			        <div class="col-lg-12">
-				        <div class="text-wrap">
-					        <h3>We are team PlanB, we try to make your traveling experience wonderful.</h3>
-				         </div>
+	    	<div class="section" id="contact">
+		        <div class="container wrap">
+			        <div class="row">
+				        <div class="col-lg-6 col-lg-offset-3">
+					        <h1>聯絡我們</h1>
+					        <form method="post">
+						        <label for="name">姓名<span class="required">*</span></label>
+					            <br>
+						        <input type="text" class="input-text" name="name" id="name" />
+
+						        <label for="email">Email<span class="required">*</span></label>
+						        <br>
+						        <input class="input-text" type="email" name="email" id="email" />
+
+						        <label for="words">訊息</label>
+						        <br>
+						        <textarea class="input-text"  rows="18" type="text" name="words" id="words"></textarea>
+					        </form>
+					        <h2>Soda 歡迎您不吝指教</h2>
+				        </div>
 			        </div>
 		        </div>
-	        </div>
-        </div> -->
-
-    	<div class="section" id="contact-us">
-	        <div class="container wrap">
-		        <div class="row">
-			        <div class="col-lg-6 col-lg-offset-3">
-				        <h1>Contact Us</h1>
-				        <form method="post">
-					        <label for="name">Name<span class="required">*</span></label>
-				            <br>
-					        <input type="text" class="input-text" name="name" id="name" />
-
-					        <label for="email">Email<span class="required">*</span></label>
-					        <br>
-					        <input class="input-text" type="email" name="email" id="email" />
-
-					        <label for="words">Message</label>
-					        <br>
-					        <textarea class="input-text"  rows="18" type="text" name="words" id="words"></textarea>
-				        </form>
-				        <h2>We are pleased to hear from you :)</h2>
-			        </div>
-		        </div>
-	        </div>
-	    </div>
+		    </div>
 
         <footer>
 	        © PlanB All right reserved.
@@ -184,10 +179,13 @@
 
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
         <!-- // <script src="js/plugins.js"></script> -->
-        <!-- // <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script> -->
-        <!-- // <script src="js/bootstrap.min.js"></script> -->
         <!-- // <script src="js/main.js"></script> -->
+        <!-- // <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script> -->
+        <script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

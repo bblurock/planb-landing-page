@@ -80,21 +80,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  font-family: 'Raleway', snas-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Jhenghei", sans-serif;
+/*  font-family: 'Raleway', snas-serif;
   font-size: 14px;
-  color: black;
+  color: black;*/
 }
 body h1 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Jhenghei", sans-serif;
+  /*font-family: 'Nunito', sans-serif;*/
 }
 body h2 {
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Jhenghei", sans-serif;
+  /*font-family: 'Alegreya Sans SC', sans-serif;*/
 }
 body h3,
 body h4,
 body h5,
 body h6 {
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Jhenghei", sans-serif;
+  /*font-family: 'Oxygen', sans-serif;*/
 }
 .empty-div {
   height: 60px;
@@ -106,17 +110,23 @@ body h6 {
   color: white;
   font-size: 0.8rem;
 }
+.navbar-default .logo{
+  float: left;
+}
 .navbar-default .navbar-brand {
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 2.0rem;
+  display: block;
+  float: left;
+  padding-top: 2px;
+  font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.9);
 }
-.navbar-default .navbar-brand img {
+/*.navbar-default .navbar-brand img {
+  float: left;
   width: 60px;
-}
+}*/
 .navbar-brand,
 .navbar-nav li a {
-  line-height: 65px;
+  line-height: 60px;
   height: 60px;
   padding-top: 0px;
 }
@@ -133,18 +143,18 @@ div#landing h2,
 div#landing h3,
 div#landing h4,
 div#landing h5 {
-  font-family: 'Nunito', sans-serif;
+  /*font-family: 'Nunito', sans-serif;*/
   display: block;
   text-align: center;
 }
 div#landing h2 {
-  font-family: 'Alegreya Sans SC', sans-serif;
+  /*font-family: 'Alegreya Sans SC', sans-serif;*/
 }
 div#landing h3,
 div#landing h4,
 div#landing h5,
 div#landing h6 {
-  font-family: 'Oxygen', sans-serif;
+  /*font-family: 'Oxygen', sans-serif;*/
 }
 div#landing h1 {
   margin-top: 0px;
@@ -178,47 +188,51 @@ div#landing .download {
   bottom: -23px;
 }
 div#landing .download h3 {
+  font-size: 1rem;
   margin-top: 0px;
 }
 div#landing .download img {
   display: block;
   margin: 0 auto;
-  width: 113px;
-  height: 40px;
+  /*width: 113px;*/
+  /*height: 34px;*/
 }
-div#what-is-soda {
+div#whatissoda {
   background-color: #ffffff;
   color: black;
 }
-div#what-is-soda .wrap {
+div#whatissoda .wrap {
   padding: 5% 0;
 }
-div#what-is-soda h1 {
-  font-family: 'Nunito', sans-serif;
+div#whatissoda h1 {
+  /*font-family: 'Nunito', sans-serif;*/
 }
-div#what-is-soda h2 {
-  font-family: 'Alegreya Sans SC', sans-serif;
+div#whatissoda h2 {
+  /*font-family: 'Alegreya Sans SC', sans-serif;*/
 }
-div#what-is-soda h3,
-div#what-is-soda h4,
-div#what-is-soda h5,
-div#what-is-soda h6 {
+div#whatissoda h3,
+div#whatissoda h4,
+div#whatissoda h5,
+div#whatissoda h6 {
   padding-top: 2%;
   font-size: 0.8rem;
   line-height: 1.8rem;
-  font-family: 'Oxygen', sans-serif;
+  /*font-family: 'Oxygen', sans-serif;*/
 }
-div#what-is-soda .iphone {
+div#whatissoda img {
+  display: block;
   margin: 0 auto;
-  margin-top: 10%;
-  display: table;
+  margin-top: 5%;
+  position: relative;
+  max-width: 250px;
 }
-div#what-is-soda .text-wrap {
-  width: 65%;
-  margin: 0 auto;
+div#whatissoda .text-wrap {
   display: table;
-  margin-top: 25%;
-  float: right;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 30%;
+  margin-left: 10%;
+
 }
 div#places {
   color: #ffffff;
@@ -229,7 +243,7 @@ div#places .wrap {
   padding: 5% 0;
 }
 div#places h1 {
-  font-family: 'Nunito', sans-serif;
+  /*font-family: 'Nunito', sans-serif;*/
   text-align: center;
 }
 div#places .everything {
@@ -241,16 +255,15 @@ div#places .everything {
 }
 div#places img {
   margin: 0 auto;
-  display: table;
-  position: absolute;
-  left: 50%;
+  display: block;
+  position: relative;
   margin-top: 0%;
-  margin-left: -180px;
+  max-width: 300px;
 }
-div#take-me-there {
+div#takemethere {
   color: #2f9375;
 }
-div#take-me-there .googlemap-wrap {
+div#takemethere .googlemap-wrap {
   content: "";
   display: block;
   position: absolute;
@@ -261,30 +274,30 @@ div#take-me-there .googlemap-wrap {
   background-image: url('../img/googlemap.png');
   background-size: contain;
 }
-div#take-me-there .iphone {
+div#takemethere img {
   margin: 0 auto;
-  width: 35%;
   margin-top: 5%;
   margin-left: 30%;
   display: table;
+  max-width: 300px;
 }
-div#take-me-there .wrap {
+div#takemethere .wrap {
   padding: 5% 0;
 }
-div#take-me-there .text-wrap {
+div#takemethere .text-wrap {
   display: table;
   margin: 0 auto;
   margin-top: 40%;
   width: 65%;
   float: middle;
 }
-div#contact-us {
+div#contact {
   text-align: center;
 }
-div#contact-us .wrap {
+div#contact .wrap {
   padding: 5% 0;
 }
-div#contact-us form {
+div#contact form {
   border-radius: 5px;
   border: 1px solid slategrey;
   width: 100%;
@@ -292,8 +305,8 @@ div#contact-us form {
   margin: 0 auto;
   display: block;
 }
-div#contact-us form input,
-div#contact-us form textarea {
+div#contact form input,
+div#contact form textarea {
   box-sizing: border-box;
   margin: 0;
   outline: 0;
@@ -319,15 +332,15 @@ div#contact-us form textarea {
   -webkit-transition: all .2s;
   transition: all .2s;
 }
-div#contact-us form input:focus,
-div#contact-us form textarea:focus {
+div#contact form input:focus,
+div#contact form textarea:focus {
   border-color: #ecf0f1;
   background-color: #FFF;
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
 }
-div#contact-us form textarea {
+div#contact form textarea {
   resize: none;
   height: 200px;
 }
