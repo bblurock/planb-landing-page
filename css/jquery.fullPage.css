@@ -23,7 +23,7 @@ html, body {
     float: left;
 }
 .slide, .slidesContainer {
-    height: 100%;
+    height: 1000px;
     display: block;
 }
 .slides {

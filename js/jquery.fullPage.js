@@ -10,23 +10,23 @@
 	$.fn.fullpage = function(options) {
 		// Create some defaults, extending them with any options that were provided
 		options = $.extend({
-			"verticalCentered" : true,
+			"verticalCentered" : false,
 			'resize' : true,
 			'slidesColor' : [],
 			'anchors':[],
-			'scrollingSpeed': 700,
+			'scrollingSpeed': 500,
 			'easing': 'easeInQuart',
 			'menu': false,
 			'navigation': false,
 			'navigationPosition': 'right',
-			'navigationColor': '#000',
+			'navigationColor': '#333',
 			'navigationTooltips': [],
 			'slidesNavigation': false,
 			'slidesNavPosition': 'bottom',
-			'controlArrowColor': '#fff',
+			'controlArrowColor': '#ccc',
 			'loopBottom': false,
 			'loopTop': false,
-			'loopHorizontal': true,
+			'loopHorizontal': false,
 			'autoScrolling': true,
 			'scrollOverflow': false,
 			'css3': false,
@@ -764,7 +764,37 @@
 					$.isFunction( options.onSlideLeave ) && options.onSlideLeave.call( this, anchorLink, (sectionIndex + 1), prevSlideIndex, xMovement);
 				}
 			}
-	
+			//slide trigger 
+			//string convert array
+			if(destiny.data("margin")){
+				var newH=$(".place-warp").height();
+				//console.log($(".place-warp").length);
+				// var imgW=388;
+				// var imgH=800;
+				// var newW=Number(newH)*imgW/imgH;
+				// console.log(newH);
+				// console.log(newW)
+				var rate=Number(newH)/995;
+
+				var arrMargin=destiny.data("margin").split(",");
+				$(".circle").css({
+
+						opacity:0.8,
+					    margin:(arrMargin[0]*rate)+"px 0 0 "+ (arrMargin[1]*rate)+ "px",
+					    transform: "scale("+rate+","+rate+")",
+						"-ms-transform": "scale("+rate+","+rate+")", /* IE 9 */
+						"-webkit-transform": "scale("+rate+","+rate+")" /* Safari and Chrome */
+					     });	
+
+			}else{
+				$(".circle").css({
+					
+					opacity:0,
+					margin:{}
+				});	
+
+			}
+			
 			destiny.addClass('active').siblings().removeClass('active');
 
 			
