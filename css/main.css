@@ -81,24 +81,18 @@ textarea {
    ========================================================================== */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Jhenghei", sans-serif;
-/*  font-family: 'Raleway', snas-serif;
-  font-size: 14px;
-  color: black;*/
 }
 body h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Jhenghei", sans-serif;
-  /*font-family: 'Nunito', sans-serif;*/
 }
 body h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Jhenghei", sans-serif;
-  /*font-family: 'Alegreya Sans SC', sans-serif;*/
 }
 body h3,
 body h4,
 body h5,
 body h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Jhenghei", sans-serif;
-  /*font-family: 'Oxygen', sans-serif;*/
 }
 .empty-div {
   height: 60px;
@@ -120,10 +114,6 @@ body h6 {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.9);
 }
-/*.navbar-default .navbar-brand img {
-  float: left;
-  width: 60px;
-}*/
 .navbar-brand,
 .navbar-nav li a {
   line-height: 60px;
@@ -205,11 +195,9 @@ div#whatissoda .wrap {
 }
 div#whatissoda h1 {
   font-weight: 10;
-  /*font-family: 'Nunito', sans-serif;*/
 }
 div#whatissoda h2 {
   font-size: 1.2rem;
-  /*font-family: 'Alegreya Sans SC', sans-serif;*/
 }
 div#whatissoda h3,
 div#whatissoda h4,
@@ -218,7 +206,6 @@ div#whatissoda h6 {
   padding-top: 5%;
   font-size: 0.8rem;
   line-height: 1.8rem;
-  /*font-family: 'Oxygen', sans-serif;*/
 }
 div#whatissoda img {
   float: right;
@@ -255,7 +242,6 @@ div#places .point-con{
   height:50px;
   margin:0 auto;
 }
-
 div#places .wrap {
   padding: 8% 0;
 }
@@ -275,7 +261,6 @@ div#places .circle{
   transition: opacity,margin 0.4s;
   -webkit-transition: opacity,margin 0.4s; /* Safari */
 }
-
 div#places .everything {
   display: block;
   position: relative;
@@ -316,9 +301,7 @@ div#takemethere .wrap {
   padding: 8% 0;
 }
 div#takemethere .text-wrap {
-  /*display: inline-block;*/
   position: relative;
-  /*margin: 0 auto;*/
   float: right;
   margin-right: 55%;
   padding-top: 10%;
@@ -329,53 +312,6 @@ div#contact {
 div#contact .wrap {
   padding: 5% 0;
 }
-/*div#contact form {
-  border-radius: 5px;
-  border: 1px solid slategrey;
-  width: 100%;
-  padding: 5% 2%;
-  margin: 0 auto;
-  display: block;
-}*/
-/*div#contact form input,*/
-/*div#contact form textarea {
-  box-sizing: border-box;
-  margin: 0;
-  outline: 0;
-  line-height: 1em;
-  display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.428571429;
-  vertical-align: middle;
-  background-image: none;
-  border: 1px solid #ecf0f1;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  font-weight: 300;
-  background-color: #ecf0f1;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -moz-transition: all .2s;
-  -o-transition: all .2s;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}*/
-/*div#contact form input:focus,*/
-/*div#contact form textarea:focus {
-  border-color: #ecf0f1;
-  background-color: #FFF;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-}*/
-/*div#contact form textarea {
-  resize: none;
-  height: 200px;
-}*/
 #contact {
   background-color: #eee;
 }
@@ -413,12 +349,6 @@ div#contact .logo {
   background-position: center;
   background-image: url('../img/LogoWhiteTrans.png');
   background-size: auto;
-}
-
-
-
-footer {
-  text-align: center;
 }
 /* ==========================================================================
    Helper classes
